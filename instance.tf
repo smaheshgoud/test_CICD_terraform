@@ -1,11 +1,11 @@
-resource "aws_instance" "main_instance" {
+resource "aws_instance" "main_instance1" {
     ami               = "ami-0ad704c126371a549"
     instance_type     = "t2.micro"
     availability_zone = "ap-south-1a"
     key_name          =  "newkey"
 
     tags = {
-        Name = "main_instance"
+        Name = "main_instance1"
     }
   
 }
